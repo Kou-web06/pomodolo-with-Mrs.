@@ -6,11 +6,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(Mrs..jpg);
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(255, 255, 255, 0.85);
-    background-blend-mode: overlay;
   }
   
   .pomodoro-container {
@@ -22,6 +17,11 @@ body {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #E0E0E0;
+    background-image: url(Mrs..jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    background-blend-mode: overlay;
   }
   
   /* タイトル */
@@ -54,6 +54,12 @@ body {
     background: linear-gradient(45deg, #00FF7F, #00CC66);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .timer-text {
+    border: 3px solid #00FF7F;
+    border-radius: 10px;
+    padding: 10px 0;
   }
   
   /* ボタン */
