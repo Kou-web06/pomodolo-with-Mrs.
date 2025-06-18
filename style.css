@@ -1,0 +1,123 @@
+/* Notionライトモードに合わせた全体のスタイル */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(Mrs..jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    background-blend-mode: overlay;
+  }
+  
+  .pomodoro-container {
+    color: #333333;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #E0E0E0;
+  }
+  
+  /* タイトル */
+  h1 {
+    color: #00FF7F; /* ミセスのグリーン */
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 20px;
+  }
+  
+  /* リンゴの回転アニメーション */
+  .apple-animation {
+    margin: 10px auto;
+    position: relative;
+  }
+  .apple-icon {
+    animation: rotateApple 4s linear infinite;
+  }
+  @keyframes rotateApple {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* タイマー表示 */
+  #timer {
+    font-size: 60px;
+    font-weight: 700;
+    color: #00FF7F;
+    margin: 20px 0;
+    background: linear-gradient(45deg, #00FF7F, #00CC66);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* ボタン */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .buttons button {
+    background: #00FF7F;
+    color: #333333;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    transition: transform 0.2s, background 0.3s;
+  }
+  .buttons button:hover {
+    background: #00CC66;
+    transform: scale(1.05);
+  }
+  
+  /* セッション数 */
+  #session-count {
+    font-size: 18px;
+    color: #333333;
+    margin: 15px 0 30px 0;
+    font-weight: bold;
+  }
+  
+  /* チェックマークアニメーション */
+  @keyframes checkmarkFade {
+    0% { opacity: 0; transform: scale(0); }
+    50% { opacity: 1; transform: scale(1.5); }
+    100% { opacity: 0; }
+  }
+  #checkmark {
+    font-size: 60px;
+    color: #00FF7F;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #checkmark.show {
+    animation: checkmarkFade 1s ease-in-out;
+  }
+  .hidden { display: none; }
+  
+  /* Spotifyプレイヤー */
+  h3 {
+    color: #333333;
+    font-size: 20px;
+    margin: 20px 0 10px;
+  }
+  iframe {
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* レスポンシブ対応 */
+  @media (max-width: 600px) {
+    #timer { font-size: 40px; }
+    h1 { font-size: 24px; }
+    .buttons button { padding: 10px 18px; font-size: 14px; }
+  }
