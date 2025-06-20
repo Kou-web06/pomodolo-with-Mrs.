@@ -11,7 +11,7 @@ Mrs. GREEN APPLE Pomodoro Timer
 •  Notionウィジェットとしてカスタマイズ可能
 
 デモ
-ライブデモはこちら:https://vercel.com/kotaro-miyauchis-projects?repo=https://github.com/Kou-web06/pomodolo-with-Mrs.
+ライブデモはこちら:https://pomodolo-with-mrs.vercel.app/
 
 技術スタック
 •  HTML/CSS/JavaScript
